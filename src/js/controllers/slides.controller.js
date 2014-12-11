@@ -2,13 +2,14 @@
     'use strict';
 
     define([
+        'jquery',
         'revealjs',
         'head'
-    ], function (Reveal) {
+    ], function ($, Reveal) {
 
         var setPdfStylesheet = function () {
             // Remove the css reveal library.
-            $('head link[href*="reveal.css"]').remove();
+            $('head link[href*="components-revealjs"]').remove();
             $('section').removeAttr('style');
             $('section').show();
             $('.reveal>.progress').hide();

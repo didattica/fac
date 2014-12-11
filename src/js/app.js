@@ -8,14 +8,14 @@
         'uiRouterStyles',
         'jquery'
     ], function (angular, route) {
-        var app = angular.module('isidoroApp', [
+        var app = angular.module('facApp', [
             'ui.router',
             'uiRouterStyles'
         ]);
 
         app.config(route);
         angular.element().ready(function () {
-            angular.bootstrap(document, ['isidoroApp']);
+            angular.bootstrap(document, ['facApp']);
         });
 
         return app;
