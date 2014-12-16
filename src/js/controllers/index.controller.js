@@ -3,13 +3,13 @@
 
     define([
     ], function () {
-        return function ($scope) {
+        return ['$scope', function ($scope) {
             $scope.$on('$viewContentLoaded', function () {
                 $scope.class = 'home';
             });
             $scope.$on('$destroy', function () {
                 $scope.$parent.class = '';
             });
-        };
+        }];
     });
 }(this.define));

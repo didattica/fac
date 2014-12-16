@@ -38,7 +38,7 @@
             touch: true // Enables touch navigation on devices with touch input
         };
 
-        return function ($scope) {
+        return ['$scope', function ($scope) {
             $scope.$parent.class = 'reveal';
             $scope.$on('$viewContentLoaded', function () {
                 setTimeout(function () {
@@ -48,6 +48,6 @@
             $scope.$on('$destroy', function () {
                 $scope.$parent.class = '';
             });
-        };
+        }];
     });
 }(this, this.define, this.document));
