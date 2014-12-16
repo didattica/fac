@@ -18,7 +18,7 @@
         kinematicView, mechanicView, workView, fluidView,
         thermodynamics1View, thermodynamics2View,
         score1View) {
-        return function ($stateProvider, $urlRouterProvider) {
+        return ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
             $stateProvider
                 .state('index', indexView)
@@ -32,6 +32,6 @@
                 .state('slides.thermodynamics-1', thermodynamics1View)
                 .state('slides.thermodynamics-2', thermodynamics2View)
                 .state('score-1', score1View);
-        };
+        }];
     });
 }(this.define));
