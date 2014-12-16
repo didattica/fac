@@ -23,6 +23,7 @@
     "requirejs": "~2.1.15",
     "text": "~2.0.12",
     "MathJax": "~2.4.0",
-    "angulartics": "~0.17.1"
+    "angulartics": "~0.17.1",
+    "r.js": "~2.1.15"
   }
 }
