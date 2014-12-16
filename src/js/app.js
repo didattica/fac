@@ -4,13 +4,17 @@
     define([
         'angular',
         'route',
+        'utilities/google.analytics',
         'angularUiRouter',
         'uiRouterStyles',
-        'jquery'
+        'angulartics',
+        'angularticsGa'
     ], function (angular, route) {
         var app = angular.module('facApp', [
             'ui.router',
-            'uiRouterStyles'
+            'uiRouterStyles',
+            'angulartics',
+            'angulartics.google.analytics'
         ]);
 
         app.config(route);
