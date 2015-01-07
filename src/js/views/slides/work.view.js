@@ -5,13 +5,11 @@
         'text!../../../templates/work.html',
     ], function (workTemplate) {
 
-        var vendor_dir = 'bower_components/';
-
         return {
             url: '/work',
             data: {
                 css: [
-                    vendor_dir + 'components-revealjs/css/theme/sky.css'
+                    'src/css/revealjs_themes/sky.css'
                 ]
             },
             template: workTemplate
