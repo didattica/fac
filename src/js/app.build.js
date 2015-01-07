@@ -1,16 +1,11 @@
 ({
-    appDir: '../',
-    baseUrl: 'js',
-    dir: '../../build',
     mainConfigFile: 'main.js',
-    modules: [
-        {
-            name: 'main',
-            include: [
-                'main'
-            ]
-        }
-    ],
-    optimizeCss: 'standard',
-    removeCombined: true
+    name: 'main',
+    out: 'main.min.js',
+    preserveLicenseComments: false,
+    optimize: 'uglify2',
+    paths: {
+        requireLib: '../../bower_components/requirejs/require'
+    },
+    include: 'requireLib'
 })
