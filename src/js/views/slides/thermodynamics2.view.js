@@ -11,7 +11,7 @@
             url: '/thermodynamics-2',
             data: {
                 css: [
-                    vendor_dir + 'components-revealjs/css/theme/beige.css'
+                    'src/css/revealjs_themes/beige.css'
                 ]
             },
             template: thermodynamicsTemplate
