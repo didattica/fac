@@ -11,7 +11,7 @@
             url: '/unit-of-measurement',
             data: {
                 css: [
-                    vendor_dir + 'components-revealjs/css/theme/sky.css'
+                    'src/css/revealjs_themes/sky.css'
                 ]
             },
             template: hardwareTemplate

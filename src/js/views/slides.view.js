@@ -9,6 +9,11 @@
 
         return {
             url: '/slides',
+            data: {
+                css: [
+                    'src/css/reveal.min.css'
+                ]
+            },
             template: slidesTemplate,
             controller: slidesController
         };
