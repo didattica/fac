@@ -1,7 +1,5 @@
-body .home {
-    margin-top: 70px;
-}
+@import '../../bower_components/bootstrap/dist/css/bootstrap.css';
+@import '../../bower_components/components-revealjs/css/reveal.css';
 
-a.btn {
-    margin-top: 5px;
-}
+@import 'app.css';
+@import 'slides.css';
