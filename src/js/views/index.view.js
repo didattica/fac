@@ -10,12 +10,6 @@
 
         return {
             url: '/',
-            data: {
-                css: [
-                    vendor_dir + '/bootstrap/dist/css/bootstrap.css',
-                    'src/css/main.css'
-                ]
-            },
             template: indexTemplate,
             controller: indexController
         };

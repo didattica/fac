@@ -9,13 +9,6 @@
 
         return {
             url: '/slides',
-            data: {
-                css: [
-                    'src/css/slides.css',
-                    vendor_dir + 'bootstrap/dist/css/bootstrap.css',
-                    vendor_dir + 'components-revealjs/css/reveal.css'
-                ]
-            },
             template: slidesTemplate,
             controller: slidesController
         };
