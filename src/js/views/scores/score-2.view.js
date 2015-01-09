@@ -2,7 +2,7 @@
     'use strict';
 
     define([
-        'text!../../../templates/scores/score-1.html',
+        'text!../../../templates/scores/score-2.html',
         '../../controllers/score.controller'
     ], function (score1Template, scoreController) {
 
@@ -10,7 +10,7 @@
 
         return {
             controller: scoreController,
-            url: '/score-1',
+            url: '/score-2',
             template: score1Template
         };
     });

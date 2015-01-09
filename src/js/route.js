@@ -12,12 +12,15 @@
         'views/slides/fluid.view',
         'views/slides/thermodynamics1.view',
         'views/slides/thermodynamics2.view',
-        'views/scores/score-1.view'
+        'views/slides/electrostatics.view',
+        'views/scores/score-1.view',
+        'views/scores/score-2.view'
     ], function (
         indexView, biotechnologyView, slidesView, unitView,
         kinematicView, mechanicView, workView, fluidView,
         thermodynamics1View, thermodynamics2View,
-        score1View) {
+        electrostaticsView,
+        score1View, score2View) {
         return ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
             $stateProvider
@@ -31,7 +34,9 @@
                 .state('slides.fluid', fluidView)
                 .state('slides.thermodynamics-1', thermodynamics1View)
                 .state('slides.thermodynamics-2', thermodynamics2View)
-                .state('score-1', score1View);
+                .state('slides.electrostatics', electrostaticsView)
+                .state('score-1', score1View)
+                .state('score-2', score2View);
         }];
     });
 }(this.define));
